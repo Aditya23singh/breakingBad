@@ -4,13 +4,13 @@ import { Box } from '@material-ui/core';
 import { fetchData } from './service/api';
 import Characters  from './components/Characters';
 import Pagination from './components/Pagination';
-import axios from 'axios';
+
 import './App.css';
 
 const App = () => {
   const [text, setText] = useState("")
   const [data, setData] = useState([])
-  const [loading, setLoading] = useState(false);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
   
